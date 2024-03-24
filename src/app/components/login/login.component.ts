@@ -23,10 +23,11 @@ export class LoginComponent implements OnInit {
   }
   onSubmit(username: string, password: string) {
     if (this.loginService.login(username, password)) {
-      // Redirige al usuario a la página de alta competencia si el inicio de sesión es exitoso
-      // Esto dependerá de tu lógica de enrutamiento
+      console.log('Inicio de sesión exitoso');
+      // Realizar acciones adicionales si el inicio de sesión es exitoso, como redirigir a otra página
     } else {
-      // Maneja el caso de inicio de sesión fallido
+      console.log('Inicio de sesión fallido');
+      // Realizar acciones adicionales si el inicio de sesión falla, como mostrar un mensaje de error
     }
   }
 }

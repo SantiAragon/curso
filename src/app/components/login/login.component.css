@@ -1,6 +1,16 @@
+.form-container img{
+  display: flex;
+  width: 80vh;
+  position: absolute;
+  top: 8rem;
+  left: 41rem;
+
+  z-index: -1;
+}
 .form-container label {
   display: block;
   margin-bottom: 5px;
+  z-index: 0;
 }
 
 .form-container .highlighted {
@@ -17,6 +27,7 @@
   background-color: #f9f9f9;
   margin-bottom: auto;
   margin-top: 20rem;
+  z-index: 0;
 }
 
 .form-container input[type="text"],
